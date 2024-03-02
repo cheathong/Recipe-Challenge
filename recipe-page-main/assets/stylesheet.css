@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+
+  color: hsl(30, 10%, 34%);
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  flex-direction: column;
+}
+span {
+  font-weight: 700;
+}
+
+h1 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: hsl(0, 4%, 5%);
+}
+h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: hsl(14, 45%, 36%);
+}
+
+.container {
+  width: 100vh;
+
+  margin: 0 auto;
+
+  background-color: hsl(0, 0%, 100%);
+
+  border-radius: 20px;
+}
+
+img {
+
+  border-radius: 20px;
+}
+
+.container .receipt-card {
+    width: 100%;
+    padding: 20px 30px 20px 30px;
+}
+
+.container .receipt-card .description {
+  font-size: 16px;
+}
+
+.container .pre-time {
+  background-color: hsla(330, 24%, 66%, 0.197);
+  width: 93%;
+  margin: 0 auto;
+  border-radius: 15px;
+  font-size: 16px;
+  padding: 20px 30px 20px 30px;
+}
+
+.container .pre-time .title {
+  font-size: 18px;
+  color: hsl(332, 51%, 32%);
+  font-weight: 600;
+}
+
+ul {
+  padding: 10px 0 0 20px;
+  list-style-position: outside;
+}
+.container .pre-time li {
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.container .R-ingredients {
+  width: 93%;
+
+  padding: 20px 0 20px 10px;
+  border-bottom: 1px solid rgb(163, 153, 153);
+  margin: auto;
+}
+.container .R-ingredients li {
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.container .R-instruction {
+  width: 93%;
+  padding: 20px 0 20px 10px;
+  border-bottom: 1px solid gray;
+  margin: auto;
+  text-align: left;
+}
+
+ol {
+  list-style-position: outside;
+  padding-left: 20px;
+}
+
+.container .R-instruction li {
+  padding-left: 10px;
+  padding: 5px 15px 10px 15px;
+}
+
+.container .nutrition {
+  padding: 20px 0 40px 40px;
+}
+
+.container .nutrition .description {
+  margin: 10px 0 10px 0;
+}
+table {
+  width: 95%;
+  border-collapse: collapse;
+  text-align: justify;
+}
+.bottom-border {
+  border-bottom: 1px solid rgb(187, 180, 180);
+}
+
+.kj {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 750px) {
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  img {
+    border-radius: 0;
+  }
+
+  .container {
+ 
+    width: 100%;
+    
+  }
+  .container .receipt-card
+  {
+    width: 100%;
+  }
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .container {
+        width:100%
+    }
+   
+      .pre-time
+      {
+        
+        width: 80%;
+        padding: 0;
+      }
+}
